@@ -11,7 +11,8 @@ fun main(args: Array<String>) {
     b = null
     println(b)
 
-    //non-null     !!는 개발자가 스스로 절대로 null값이 아니라고 판단할때 사용한다 하지만 null이 발생하면 런타임시 에러가 난다
+    // non-null
+    // !!는 개발자가 스스로 절대로 null값이 아니라고 판단할때 사용한다 하지만 null이 발생하면 런타임시 에러가 난다
     // !!의 사용은 최대한 피해야 한다
     var c:String? = null
     println(c!!.length)
