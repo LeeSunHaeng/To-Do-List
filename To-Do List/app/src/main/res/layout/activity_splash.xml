@@ -20,7 +20,7 @@
             android:fontFamily="@font/leferipointwhiteoblique"
             android:textSize="40sp"
             android:textStyle="bold"
-            android:textColor="#C1FF18FB"
+            android:textColor="#9A1824FF"
             android:layout_marginTop="32dp"
                                                 />
 
