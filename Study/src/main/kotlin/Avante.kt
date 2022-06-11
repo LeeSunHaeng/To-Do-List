@@ -1,2 +1,0 @@
-class Avante : Car() {
-}

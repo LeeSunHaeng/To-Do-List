@@ -3,11 +3,14 @@ package com.sunhang.to_dolist
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.ActionMode
+import com.sunhang.to_dolist.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
+    private lateinit var binding : ActivityMainBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        binding = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(binding.root)
         //액티비티가 생성될 때 호출되어 사용자 인터페이스 초기화 할 때 이곳에 구현
         println("sunhangLee onCreate!!")
     }
