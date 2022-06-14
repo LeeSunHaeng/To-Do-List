@@ -44,22 +44,33 @@
             android:layout_marginStart="16dp"
             android:layout_marginEnd="16dp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent"
-            android:layout_marginBottom="16dp"
             tools:listitem="@layout/list_item_todo"
             android:id="@+id/rv_todo" app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintVertical_bias="0.0"/>
+            app:layout_constraintVertical_bias="0.0" app:layout_constraintBottom_toTopOf="@+id/adView"
+            android:layout_marginBottom="16dp"/>
     <com.google.android.material.floatingactionbutton.FloatingActionButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:clickable="true"
-            app:tint = "#18FFFF"
+            app:tint="#18FFFF"
             app:backgroundTint="#000"
             android:elevation="10dp"
             app:srcCompat="@drawable/add2_512"
             android:id="@+id/btn_write"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent"
-            android:layout_marginBottom="32dp"
-            android:layout_marginEnd="32dp"/>
+            android:layout_marginEnd="32dp" app:layout_constraintBottom_toTopOf="@+id/adView"
+            android:layout_marginBottom="32dp"/>
+
+    <com.google.android.gms.ads.AdView
+            android:id="@+id/adView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            app:adSize="BANNER"
+            app:adUnitId="ca-app-pub-9507652706911720/5151102714"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+    >
+    </com.google.android.gms.ads.AdView>
 </androidx.constraintlayout.widget.ConstraintLayout>
