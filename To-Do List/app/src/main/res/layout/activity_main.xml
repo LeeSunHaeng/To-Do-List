@@ -5,7 +5,7 @@
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".MainActivity">
+        tools:context=".activity.MainActivity">
 
 
     <TextView
@@ -38,6 +38,7 @@
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_marginTop="16dp"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
             app:layout_constraintTop_toBottomOf="@+id/view"
             app:layout_constraintStart_toStartOf="parent"
             android:layout_marginStart="16dp"
@@ -46,5 +47,19 @@
             app:layout_constraintBottom_toBottomOf="parent"
             android:layout_marginBottom="16dp"
             tools:listitem="@layout/list_item_todo"
-            android:id="@+id/rv_todo"/>
+            android:id="@+id/rv_todo" app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintVertical_bias="0.0"/>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            app:tint = "#18FFFF"
+            app:backgroundTint="#000"
+            android:elevation="10dp"
+            app:srcCompat="@drawable/add2_512"
+            android:id="@+id/btn_write"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="32dp"
+            android:layout_marginEnd="32dp"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
