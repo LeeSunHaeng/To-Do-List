@@ -33,7 +33,8 @@ class MainActivity : AppCompatActivity() {
         //모바일 광고 sdk 초기화
         MobileAds.initialize(this) {}
 
-        //하단 배너 광고 로드드
+
+        //하단 배너 광고 로드
        val adRequest = AdRequest.Builder().build()
         binding.adView.loadAd(adRequest)
 
